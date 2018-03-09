@@ -1,0 +1,33 @@
+// ------------------------------------------ //
+// MIXINS
+// ------------------------------------------ //
+@mixin wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 10rem 0;
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    &__wrapper {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1.5rem;
+
+        @media (min-width: $medium-up) {
+            width: $screen-m-min;
+        }
+
+        @media (min-width: $large-up) {
+            width: $screen-l-min;
+        }
+
+        @media (min-width: $extra-large-up) {
+            width: $screen-xl-min;
+        }
+    }
+}
