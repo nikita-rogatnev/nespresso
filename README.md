@@ -5,7 +5,7 @@
 ## Summary
 * High Resolution: Yes
 * Compatible Browsers: Edge, Firefox, Safari, Opera, Chrome, IE11+
-* Technologies: BEM, HTML5, LESS, Gulp
+* Technologies: BEM, HTML5, SCSS, Gulp
 * Files Included: HTML Files, SCSS Files, CSS Files, JS Files, Images
 * Layout: Responsive
 
@@ -16,7 +16,6 @@ cd nespresso
 npm i
 npm run build
 
-git subtree push --prefix build origin master
 ```
 [travis-image]: https://travis-ci.org/rogatnev-nikita/nespresso.svg?branch=master
 [travis-url]: https://travis-ci.org/rogatnev-nikita/nespresso
