@@ -4,4 +4,52 @@
 .intro {
     @include wrapper;
 
+    &__wrapper {
+        background: url("../img/intro.jpg") no-repeat center center / cover;
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+        padding: 9rem 0;
+    }
+
+    &__heading {
+        color: $color-primary-text-light;
+        font-size: 4.5rem;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+        padding-bottom: 3rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            background: $color-primary-text-light;
+            display: block;
+            width: 14.5rem;
+            height: 0.1rem;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__subheading {
+        color: $color-primary-text-light;
+        font-size: 3rem;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 6rem;
+    }
+
+    &__dates {
+        color: $color-primary-text-light;
+        font-size: $font-size-00;
+    }
+
+    @media (min-width: $large-up) {
+        &__content {
+            width: 50%;
+        }
+    }
 }

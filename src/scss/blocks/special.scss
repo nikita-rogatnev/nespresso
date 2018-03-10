@@ -5,4 +5,7 @@
     @include wrapper;
     @include heading;
 
+    &__wrapper {
+        background: #f4f4f4;
+    }
 }

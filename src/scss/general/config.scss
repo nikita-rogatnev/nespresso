@@ -2,6 +2,45 @@
 // VARIABLES
 // ------------------------------------------ //
 
+// FONT WEIGHTS
+$light-font-weight: 300;
+$regular-font-weight: 400;
+$bold-font-weight: 700;
+$extra-bold-font-weight: 900;
+
+// FONTS
+@font-face {
+    font-family: 'NespressoLucas';
+    font-style: normal;
+    font-weight: $extra-bold-font-weight;
+    src: url('../fonts/NespressoLucas-XtraBd.woff2') format('woff2'),
+    url('../fonts/NespressoLucas-XtraBd.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NespressoLucas';
+    font-style: normal;
+    font-weight: $bold-font-weight;
+    src: url('../fonts/NespressoLucas-Bold.woff2') format('woff2'),
+    url('../fonts/NespressoLucas-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NespressoLucas';
+    font-style: normal;
+    font-weight: $regular-font-weight;
+    src: url('../fontsNespressoLucas-Regular.woff2') format('woff2'),
+    url('../fonts/NespressoLucas-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NespressoLucas';
+    font-style: normal;
+    font-weight: $light-font-weight;
+    src: url('../fonts/NespressoLucas-Light.woff2') format('woff2'),
+    url('../fonts/NespressoLucas-Light.woff') format('woff');
+}
+
 // FONT SIZES
 $html-font-size: 62.5%; // 1rem = 10px
 
@@ -20,32 +59,27 @@ $font-size-06: 6.5rem; // 65px
 
 $base-font-size: $font-size--1;
 
-// FONT WEIGHTS
-$light-font-weight: 300;
-$regular-font-weight: 400;
-$medium-font-weight: 500;
-$semi-bold-font-weight: 600;
-$bold-font-weight: 700;
+$base-font-family: 'NespressoLucas', Arial, sans-serif;
+$secondary-font-family: $base-font-family;
 
 // COLORS
-$color-accent: rgba(255, 250, 205, 1);
+$color-accent: rgba(2, 189, 236, 1);
 $color-accent-dark: $color-accent;
 $color-accent-light: $color-accent;
-$color-primary: #121214;
+
+$color-primary: rgba(0, 0, 0, 1);
 $color-primary-dark: $color-primary;
 $color-primary-light: $color-primary;
-$color-secondary: #1c9797;
+
+$color-secondary: rgba(221, 157, 74, 1);
 $color-secondary-dark: $color-secondary;
 $color-secondary-light: $color-secondary;
+
 $color-primary-text-dark: rgba(0, 0, 0, 1);
 $color-primary-text-light: rgba(255, 255, 255, 1);
 
 // TRANSITIONS
 $transition: 0.3s;
-
-// FONT FAMILIES
-$font-family-primary: 'Oswald', Arial, sans-serif;
-$font-family-secondary: 'Caveat', Arial, sans-serif;
 
 // BREAKPOINTS
 $screen-large-min: 918px;

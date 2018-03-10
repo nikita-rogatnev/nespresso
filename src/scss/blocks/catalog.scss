@@ -5,4 +5,83 @@
     @include wrapper;
     @include heading;
 
+    &__wrapper {
+        text-align: center;
+    }
+
+    &__slider {
+        margin: 0 -2.5rem;
+        position: relative;
+    }
+
+    &__slide {
+        a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        width: 100%;
+        font-size: 0;
+        line-height: 0;
+
+        h1 {
+            font-size: $font-size-00;
+            line-height: 2rem;
+            text-transform: uppercase;
+            font-weight: $regular-font-weight;
+            color: $color-primary-text-dark;
+        }
+
+        p {
+            font-size: 2.4rem;
+            line-height: 2.6rem;
+            font-weight: $bold-font-weight;
+            color: $color-primary-text-dark;
+        }
+
+        &::before{
+            content: "";
+            background: $color-primary-text-light;
+            display: block;
+            width: 14.5rem;
+            height: 0.5rem;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+
+        &--active {
+            h1,
+            p {
+                color: $color-secondary;
+            }
+        }
+    }
+
+    @media (min-width: $large-up) {
+        &__items {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-top: -5rem;
+
+        }
+
+        &__item {
+            width: calc(100% / 3);
+
+            p {
+                padding: 0 3rem;
+            }
+        }
+    }
 }

@@ -3,10 +3,8 @@
 // ------------------------------------------ //
 @mixin wrapper {
     position: relative;
-
     display: flex;
     flex-direction: column;
-
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -14,11 +12,9 @@
     &__wrapper {
         width: 100%;
         margin: 0 auto;
-        padding: 1.5rem;
-
+        padding: 0 2.5rem;
         background: $color-primary-text-light;
-
-        outline: 1px solid red;
+        position: relative;
 
         @media (min-width: $large-up) {
             width: $screen-large-min;
@@ -28,8 +24,11 @@
 
 @mixin heading {
     &__heading {
+        font-size: $font-size-02;
+        line-height: 3.5rem;
         text-align: center;
         color: $color-primary-text-dark;
+        padding: 4rem 0;
         text-transform: uppercase;
     }
 }

@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'NespressoLucas';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/NespressoLucas-XtraBd.woff2") format("woff2"), url("../fonts/NespressoLucas-XtraBd.woff") format("woff"); }
+
+@font-face {
+  font-family: 'NespressoLucas';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/NespressoLucas-Bold.woff2") format("woff2"), url("../fonts/NespressoLucas-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'NespressoLucas';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fontsNespressoLucas-Regular.woff2") format("woff2"), url("../fonts/NespressoLucas-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'NespressoLucas';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/NespressoLucas-Light.woff2") format("woff2"), url("../fonts/NespressoLucas-Light.woff") format("woff"); }
+
 /* ------------------------------------------ */
 /* GLOBAL
 /* ------------------------------------------ */
@@ -12,12 +36,13 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  outline: 1px dashed lightgrey; }
 
 body {
-  color: #121214;
+  color: black;
   background: black;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "NespressoLucas", Arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.2;
@@ -38,14 +63,16 @@ img {
 h1,
 h2,
 h3 {
-  margin: 1rem 0; }
+  margin: 0;
+  padding: 0;
+  font-weight: 900; }
 
 p {
   margin: 0.5rem 0; }
 
 a {
   text-decoration: none;
-  color: lemonchiffon; }
+  color: #02bdec; }
 
 /* ------------------------------------------ */
 /* HEADER BLOCK
@@ -70,9 +97,31 @@ a {
   .header__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 0 2.5rem;
     background: white;
-    outline: 1px solid red; }
+    position: relative; }
+
+/* ------------------------------------------ */
+/* BUTTON BLOCK
+/* ------------------------------------------ */
+.btn {
+  background: black;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0 auto;
+  padding: 1.5rem 5rem;
+  display: inline-block;
+  vertical-align: middle;
+  border: 0.5rem solid black; }
+  .btn--light {
+    background: transparent;
+    border-color: white;
+    color: white;
+    text-transform: none;
+    font-size: 2.6rem; }
 
 /* ------------------------------------------ */
 /* INTRO BLOCK
@@ -97,9 +146,47 @@ a {
   .intro__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 0 2.5rem;
     background: white;
-    outline: 1px solid red; }
+    position: relative; }
+  .intro__wrapper {
+    background: url("../img/intro.jpg") no-repeat center center/cover;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 9rem 0; }
+  .intro__heading {
+    color: white;
+    font-size: 4.5rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    position: relative; }
+    .intro__heading::after {
+      content: "";
+      background: white;
+      display: block;
+      width: 14.5rem;
+      height: 0.1rem;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .intro__subheading {
+    color: white;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 6rem; }
+  .intro__dates {
+    color: white;
+    font-size: 1.8rem; }
 
 /* ------------------------------------------ */
 /* CATALOG BLOCK
@@ -124,13 +211,64 @@ a {
   .catalog__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 0 2.5rem;
     background: white;
-    outline: 1px solid red; }
+    position: relative; }
   .catalog__heading {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
     text-align: center;
     color: black;
+    padding: 4rem 0;
     text-transform: uppercase; }
+  .catalog__wrapper {
+    text-align: center; }
+  .catalog__slider {
+    margin: 0 -2.5rem;
+    position: relative; }
+  .catalog__slide a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .catalog__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .catalog__item {
+    width: 100%;
+    font-size: 0;
+    line-height: 0; }
+    .catalog__item h1 {
+      font-size: 1.8rem;
+      line-height: 2rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: black; }
+    .catalog__item p {
+      font-size: 2.4rem;
+      line-height: 2.6rem;
+      font-weight: 700;
+      color: black; }
+    .catalog__item::before {
+      content: "";
+      background: white;
+      display: block;
+      width: 14.5rem;
+      height: 0.5rem;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    .catalog__item--active h1,
+    .catalog__item--active p {
+      color: #dd9d4a; }
 
 /* ------------------------------------------ */
 /* SPECIAL BLOCK
@@ -155,13 +293,18 @@ a {
   .special__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 0 2.5rem;
     background: white;
-    outline: 1px solid red; }
+    position: relative; }
   .special__heading {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
     text-align: center;
     color: black;
+    padding: 4rem 0;
     text-transform: uppercase; }
+  .special__wrapper {
+    background: #f4f4f4; }
 
 /* ------------------------------------------ */
 /* COLLECTION BLOCK
@@ -186,12 +329,15 @@ a {
   .collection__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 0 2.5rem;
     background: white;
-    outline: 1px solid red; }
+    position: relative; }
   .collection__heading {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
     text-align: center;
     color: black;
+    padding: 4rem 0;
     text-transform: uppercase; }
 
 /* ------------------------------------------ */
@@ -217,12 +363,15 @@ a {
   .professional__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 0 2.5rem;
     background: white;
-    outline: 1px solid red; }
+    position: relative; }
   .professional__heading {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
     text-align: center;
     color: black;
+    padding: 4rem 0;
     text-transform: uppercase; }
 
 /* ------------------------------------------ */
@@ -248,12 +397,15 @@ a {
   .advantages__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 0 2.5rem;
     background: white;
-    outline: 1px solid red; }
+    position: relative; }
   .advantages__heading {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
     text-align: center;
     color: black;
+    padding: 4rem 0;
     text-transform: uppercase; }
 
 /* ------------------------------------------ */
@@ -279,9 +431,9 @@ a {
   .contacts__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 0 2.5rem;
     background: white;
-    outline: 1px solid red; }
+    position: relative; }
 
 /* ------------------------------------------ */
 /* FOOTER BLOCK
@@ -306,16 +458,30 @@ a {
   .footer__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 0 2.5rem;
     background: white;
-    outline: 1px solid red; }
+    position: relative; }
   @media (min-width: 918px) {
       .header__wrapper {
         width: 918px; }
       .intro__wrapper {
         width: 918px; }
+    .intro__content {
+      width: 50%; }
       .catalog__wrapper {
         width: 918px; }
+    .catalog__items {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      margin-top: -5rem; }
+    .catalog__item {
+      width: calc(100% / 3); }
+      .catalog__item p {
+        padding: 0 3rem; }
       .special__wrapper {
         width: 918px; }
       .collection__wrapper {

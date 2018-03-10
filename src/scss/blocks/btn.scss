@@ -1,0 +1,24 @@
+/* ------------------------------------------ */
+/* BUTTON BLOCK
+/* ------------------------------------------ */
+.btn {
+    background: $color-primary-text-dark;
+    text-transform: uppercase;
+    color: $color-primary-text-light;
+    font-weight: $bold-font-weight;
+    font-size: 3rem;
+    line-height: 1;
+    margin: 0 auto;
+    padding: 1.5rem 5rem;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0.5rem solid $color-primary-text-dark;
+
+    &--light {
+        background: transparent;
+        border-color: $color-primary-text-light;
+        color: $color-primary-text-light;
+        text-transform: none;
+        font-size: 2.6rem;
+    }
+}
