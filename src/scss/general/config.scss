@@ -48,10 +48,5 @@ $font-family-primary: 'Oswald', Arial, sans-serif;
 $font-family-secondary: 'Caveat', Arial, sans-serif;
 
 // BREAKPOINTS
-$screen-s-min: 320px;
-$screen-m-min: 768px;
-$screen-l-min: 1170px;
-$screen-xl-min: 1550px;
-$medium-up: $screen-m-min;
-$large-up: $screen-l-min;
-$extra-large-up: $screen-xl-min;
+$screen-large-min: 918px;
+$large-up: $screen-large-min;
