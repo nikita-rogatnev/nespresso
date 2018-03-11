@@ -5,8 +5,8 @@
     @include wrapper;
 
     &__wrapper {
-        padding-top: 3.5rem;
-        padding-bottom: 3.5rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
     }
 
     &__content {
@@ -106,7 +106,7 @@
 
     @media (min-width: $large-up) {
         &__content {
-            padding: 7.5rem 13rem;
+            padding: 8rem 13rem;
             border: 0.1rem solid $color-primary-dark;
         }
 

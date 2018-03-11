@@ -26,12 +26,13 @@
 
     @media (min-width: $large-up) {
         font-size: 3rem;
-        padding: 1.5rem 5rem;
+        padding: 1.5rem 3rem;
         border: 0.5rem solid $color-primary-text-dark;
         width: auto;
 
         &--light {
             font-size: 2.6rem;
+            padding: 2rem 4rem;
             border-color: $color-primary-text-light;
         }
     }

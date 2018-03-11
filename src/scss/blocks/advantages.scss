@@ -6,6 +6,7 @@
     @include heading;
 
     &__wrapper {
+        padding-top: 2.5rem;
         padding-bottom: 3.5rem;
     }
 
@@ -77,6 +78,7 @@
         &__items {
             flex-direction: row;
             flex-wrap: nowrap;
+            margin-top: 2.5rem;
         }
     }
 }

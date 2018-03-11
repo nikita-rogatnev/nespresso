@@ -36,8 +36,7 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   margin: 0;
-  padding: 0;
-  outline: 1px dashed lightgrey; }
+  padding: 0; }
 
 body {
   color: black;
@@ -185,7 +184,7 @@ a {
     font-size: 2rem;
     line-height: 1.2;
     text-transform: uppercase;
-    margin-bottom: 6rem; }
+    margin-bottom: 5rem; }
   .intro__dates {
     color: white;
     font-size: 1.8rem;
@@ -222,7 +221,7 @@ a {
     line-height: 2.5rem;
     text-align: center;
     color: black;
-    padding: 4rem 0;
+    padding: 3rem 0;
     text-transform: uppercase;
     width: 100%; }
     .catalog__heading--small {
@@ -237,7 +236,7 @@ a {
     display: none; }
     .catalog__slide .btn {
       position: absolute;
-      top: 50%;
+      top: 47.5%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
@@ -273,7 +272,7 @@ a {
       font-weight: 400;
       color: black;
       position: relative;
-      padding: 2rem 0 2.5rem; }
+      padding: 1rem 0 1.4rem; }
     .catalog__item p {
       margin: 0;
       font-size: 2.4rem;
@@ -341,7 +340,7 @@ a {
     line-height: 2.5rem;
     text-align: center;
     color: black;
-    padding: 4rem 0;
+    padding: 3rem 0;
     text-transform: uppercase;
     width: 100%; }
     .special__heading--small {
@@ -419,7 +418,7 @@ a {
     line-height: 2.5rem;
     text-align: center;
     color: black;
-    padding: 4rem 0;
+    padding: 3rem 0;
     text-transform: uppercase;
     width: 100%; }
     .collection__heading--small {
@@ -459,7 +458,7 @@ a {
     line-height: 2.5rem;
     text-align: center;
     color: black;
-    padding: 4rem 0;
+    padding: 3rem 0;
     text-transform: uppercase;
     width: 100%; }
     .professional__heading--small {
@@ -512,12 +511,13 @@ a {
     line-height: 2.5rem;
     text-align: center;
     color: black;
-    padding: 4rem 0;
+    padding: 3rem 0;
     text-transform: uppercase;
     width: 100%; }
     .advantages__heading--small {
       font-size: 2rem; }
   .advantages__wrapper {
+    padding-top: 2.5rem;
     padding-bottom: 3.5rem; }
   .advantages__items {
     display: -webkit-box;
@@ -613,8 +613,8 @@ a {
     background: white;
     position: relative; }
   .contacts__wrapper {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem; }
+    padding-top: 4rem;
+    padding-bottom: 2rem; }
   .contacts__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -780,17 +780,19 @@ a {
         width: 918px; }
     .btn {
       font-size: 3rem;
-      padding: 1.5rem 5rem;
+      padding: 1.5rem 3rem;
       border: 0.5rem solid black;
       width: auto; }
       .btn--light {
         font-size: 2.6rem;
+        padding: 2rem 4rem;
         border-color: white; }
       .intro__wrapper {
         width: 918px; }
     .intro__heading {
       font-size: 4.5rem;
-      line-height: 1.2; }
+      line-height: 1.15;
+      padding-top: 2.5rem; }
     .intro__subheading {
       font-size: 3rem;
       line-height: 1.2; }
@@ -800,10 +802,12 @@ a {
         width: 918px; }
       .catalog__heading {
         font-size: 3rem;
-        line-height: 3.5rem; }
+        line-height: 3.5rem;
+        padding: 4rem 0; }
         .catalog__heading--small {
           font-size: 2.5rem;
-          line-height: 3.5rem; }
+          line-height: 3.5rem;
+          padding: 3rem 0; }
     .catalog__items {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -811,7 +815,7 @@ a {
               flex-direction: row;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
-      margin-top: -5rem; }
+      margin-top: -4rem; }
     .catalog__item {
       width: calc(100% / 3);
       padding: 0; }
@@ -820,10 +824,10 @@ a {
       .catalog__item:first-child::before {
         left: 3rem; }
       .catalog__item::before {
-        top: -2rem;
+        top: -1rem;
         left: -1rem;
-        width: 9rem;
-        height: 9rem; }
+        width: 8rem;
+        height: 8rem; }
     .catalog__plus {
       top: 4rem;
       right: 4rem;
@@ -833,10 +837,12 @@ a {
         width: 918px; }
       .special__heading {
         font-size: 3rem;
-        line-height: 3.5rem; }
+        line-height: 3.5rem;
+        padding: 4rem 0; }
         .special__heading--small {
           font-size: 2.5rem;
-          line-height: 3.5rem; }
+          line-height: 3.5rem;
+          padding: 3rem 0; }
     .special__wrapper {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -853,37 +859,44 @@ a {
         width: 918px; }
       .collection__heading {
         font-size: 3rem;
-        line-height: 3.5rem; }
+        line-height: 3.5rem;
+        padding: 4rem 0; }
         .collection__heading--small {
           font-size: 2.5rem;
-          line-height: 3.5rem; }
+          line-height: 3.5rem;
+          padding: 3rem 0; }
       .professional__wrapper {
         width: 918px; }
       .professional__heading {
         font-size: 3rem;
-        line-height: 3.5rem; }
+        line-height: 3.5rem;
+        padding: 4rem 0; }
         .professional__heading--small {
           font-size: 2.5rem;
-          line-height: 3.5rem; }
+          line-height: 3.5rem;
+          padding: 3rem 0; }
       .advantages__wrapper {
         width: 918px; }
       .advantages__heading {
         font-size: 3rem;
-        line-height: 3.5rem; }
+        line-height: 3.5rem;
+        padding: 4rem 0; }
         .advantages__heading--small {
           font-size: 2.5rem;
-          line-height: 3.5rem; }
+          line-height: 3.5rem;
+          padding: 3rem 0; }
     .advantages__items {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
       -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; }
+          flex-wrap: nowrap;
+      margin-top: 2.5rem; }
       .contacts__wrapper {
         width: 918px; }
     .contacts__content {
-      padding: 7.5rem 13rem;
+      padding: 8rem 13rem;
       border: 0.1rem solid #3b3b3b; }
     .contacts__promocode {
       margin: 0;
