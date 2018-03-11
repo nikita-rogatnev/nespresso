@@ -14,7 +14,7 @@
   font-family: 'NespressoLucas';
   font-style: normal;
   font-weight: 400;
-  src: url("../fontsNespressoLucas-Regular.woff2") format("woff2"), url("../fonts/NespressoLucas-Regular.woff") format("woff"); }
+  src: url("../fonts/NespressoLucas-Regular.woff2") format("woff2"), url("../fonts/NespressoLucas-Regular.woff") format("woff"); }
 
 @font-face {
   font-family: 'NespressoLucas';
@@ -186,7 +186,8 @@ a {
     margin-bottom: 6rem; }
   .intro__dates {
     color: white;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    font-weight: 900; }
 
 /* ------------------------------------------ */
 /* CATALOG BLOCK
@@ -222,16 +223,27 @@ a {
     padding: 4rem 0;
     text-transform: uppercase; }
   .catalog__wrapper {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 6.5rem; }
   .catalog__slider {
     margin: 0 -2.5rem;
     position: relative; }
-  .catalog__slide a {
+  .catalog__slide {
+    display: none; }
+    .catalog__slide .btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+    .catalog__slide--active {
+      display: block; }
+  .catalog__plus {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    top: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem; }
   .catalog__items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -241,11 +253,13 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    padding-bottom: 3.5rem; }
   .catalog__item {
     width: 100%;
     font-size: 0;
-    line-height: 0; }
+    line-height: 0;
+    position: relative; }
     .catalog__item h1 {
       font-size: 1.8rem;
       line-height: 2rem;
@@ -253,10 +267,28 @@ a {
       font-weight: 400;
       color: black;
       position: relative;
-      padding: 1rem 0 3rem; }
-      .catalog__item h1::before {
+      padding: 2rem 0 2.5rem; }
+    .catalog__item p {
+      margin: 0;
+      font-size: 2.4rem;
+      line-height: 2.6rem;
+      font-weight: 700;
+      color: black; }
+    .catalog__item::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -2rem;
+      left: -1rem;
+      width: 9rem;
+      height: 9rem;
+      background: url("../img/present.png") no-repeat center center/contain; }
+    .catalog__item:first-child::before {
+      left: 3rem; }
+    .catalog__item--active h1 {
+      color: #dd9d4a; }
+      .catalog__item--active h1::before {
         content: "";
-        background: white;
         display: block;
         width: 14.5rem;
         height: 0.5rem;
@@ -264,18 +296,13 @@ a {
         left: 50%;
         top: 0;
         -webkit-transform: translateX(-50%);
-                transform: translateX(-50%); }
-    .catalog__item p {
-      font-size: 2.4rem;
-      line-height: 2.6rem;
-      font-weight: 700;
-      color: black; }
-    .catalog__item--active h1 {
-      color: #dd9d4a; }
-      .catalog__item--active h1::before {
+                transform: translateX(-50%);
         background: #dd9d4a; }
     .catalog__item--active p {
       color: #dd9d4a; }
+  .catalog__image {
+    width: auto;
+    height: 18rem; }
 
 /* ------------------------------------------ */
 /* SPECIAL BLOCK
@@ -489,6 +516,11 @@ a {
       width: calc(100% / 3); }
       .catalog__item p {
         padding: 0 3rem; }
+    .catalog__plus {
+      top: 4rem;
+      right: 4rem;
+      width: 6rem;
+      height: 6rem; }
       .special__wrapper {
         width: 918px; }
       .collection__wrapper {

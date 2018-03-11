@@ -45,6 +45,7 @@
     &__dates {
         color: $color-primary-text-light;
         font-size: $font-size-00;
+        font-weight: $extra-bold-font-weight;
     }
 
     @media (min-width: $large-up) {
