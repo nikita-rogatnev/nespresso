@@ -8,4 +8,101 @@
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
     }
+
+    &__content {
+        border: 0.1rem solid $color-primary-dark;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 7.5rem 13rem;
+    }
+
+    &__heading {
+        width: 100%;
+        font-weight: $extra-bold-font-weight;
+        color: $color-secondary;
+        font-size: 2.6rem;
+        line-height: 1;
+        margin-bottom: 3rem;
+    }
+
+    &__list {
+        width: auto;
+        flex-grow: 1;
+    }
+
+    &__item {
+        margin-bottom: 3.5rem;
+        padding-left: 5.5rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -50%;
+            display: block;
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+
+        &:nth-child(1) {
+            &::before {
+                background: url("../img/contacts-1.png") no-repeat center center / contain;
+            }
+        }
+
+        &:nth-child(2) {
+            &::before {
+                background: url("../img/contacts-2.png") no-repeat center center / contain;
+            }
+        }
+
+        &:nth-child(3) {
+            margin: 0;
+
+            &::before {
+                background: url("../img/contacts-3.png") no-repeat center center / contain;
+            }
+        }
+
+        a {
+            font-weight: $regular-font-weight;
+            font-size: $font-size-00;
+            line-height: 1;
+            color: $color-primary-text-dark;
+
+            &:hover,
+            &:visited,
+            &:active {
+                font-weight: $regular-font-weight;
+                font-size: $font-size-00;
+                line-height: 1;
+                color: $color-primary-text-dark;
+            }
+        }
+    }
+
+    &__promocode {
+        text-align: center;
+        width: 25rem;
+        padding: 3rem 0;
+        border-top: 0.1rem solid $color-primary-dark;
+        border-bottom: 0.1rem solid $color-primary-dark;
+        font-weight: $extra-bold-font-weight;
+        font-size: $font-size-00;
+        line-height: 2rem;
+        white-space: nowrap;
+
+        span {
+            color: $color-secondary;
+            font-weight: $extra-bold-font-weight;
+            font-size: 2.6rem;
+            line-height: 1;
+            text-transform: uppercase;
+            display: block;
+            padding-top: 2rem;
+        }
+    }
+
 }

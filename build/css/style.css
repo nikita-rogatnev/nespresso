@@ -602,6 +602,78 @@ a {
   .contacts__wrapper {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem; }
+  .contacts__content {
+    border: 0.1rem solid #3b3b3b;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 7.5rem 13rem; }
+  .contacts__heading {
+    width: 100%;
+    font-weight: 900;
+    color: #dd9d4a;
+    font-size: 2.6rem;
+    line-height: 1;
+    margin-bottom: 3rem; }
+  .contacts__list {
+    width: auto;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .contacts__item {
+    margin-bottom: 3.5rem;
+    padding-left: 5.5rem;
+    position: relative; }
+    .contacts__item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -50%;
+      display: block;
+      width: 3.5rem;
+      height: 3.5rem; }
+    .contacts__item:nth-child(1)::before {
+      background: url("../img/contacts-1.png") no-repeat center center/contain; }
+    .contacts__item:nth-child(2)::before {
+      background: url("../img/contacts-2.png") no-repeat center center/contain; }
+    .contacts__item:nth-child(3) {
+      margin: 0; }
+      .contacts__item:nth-child(3)::before {
+        background: url("../img/contacts-3.png") no-repeat center center/contain; }
+    .contacts__item a {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 1;
+      color: black; }
+      .contacts__item a:hover, .contacts__item a:visited, .contacts__item a:active {
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1;
+        color: black; }
+  .contacts__promocode {
+    text-align: center;
+    width: 25rem;
+    padding: 3rem 0;
+    border-top: 0.1rem solid #3b3b3b;
+    border-bottom: 0.1rem solid #3b3b3b;
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    white-space: nowrap; }
+    .contacts__promocode span {
+      color: #dd9d4a;
+      font-weight: 900;
+      font-size: 2.6rem;
+      line-height: 1;
+      text-transform: uppercase;
+      display: block;
+      padding-top: 2rem; }
 
 /* ------------------------------------------ */
 /* FOOTER BLOCK
