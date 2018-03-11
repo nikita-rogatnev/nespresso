@@ -10,11 +10,9 @@
     }
 
     &__content {
-        border: 0.1rem solid $color-primary-dark;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 7.5rem 13rem;
     }
 
     &__heading {
@@ -72,20 +70,21 @@
             line-height: 1;
             color: $color-primary-text-dark;
 
-            &:hover,
-            &:visited,
-            &:active {
-                font-weight: $regular-font-weight;
-                font-size: $font-size-00;
-                line-height: 1;
+            &:visited {
                 color: $color-primary-text-dark;
+            }
+
+            &:hover,
+            &:active {
+                color: $color-secondary;
             }
         }
     }
 
     &__promocode {
         text-align: center;
-        width: 25rem;
+        width: 100%;
+        margin-top: 4rem;
         padding: 3rem 0;
         border-top: 0.1rem solid $color-primary-dark;
         border-bottom: 0.1rem solid $color-primary-dark;
@@ -105,4 +104,15 @@
         }
     }
 
+    @media (min-width: $large-up) {
+        &__content {
+            padding: 7.5rem 13rem;
+            border: 0.1rem solid $color-primary-dark;
+        }
+
+        &__promocode {
+            margin: 0;
+            width: 25rem;
+        }
+    }
 }
