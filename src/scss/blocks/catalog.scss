@@ -26,6 +26,8 @@
     &__items {
         display: flex;
         flex-direction: column;
+        position: relative;
+        z-index: 1;
     }
 
     &__item {
@@ -39,6 +41,20 @@
             text-transform: uppercase;
             font-weight: $regular-font-weight;
             color: $color-primary-text-dark;
+            position: relative;
+            padding: 1rem 0 3rem;
+
+            &::before {
+                content: "";
+                background: $color-primary-text-light;
+                display: block;
+                width: 14.5rem;
+                height: 0.5rem;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+            }
         }
 
         p {
@@ -48,20 +64,15 @@
             color: $color-primary-text-dark;
         }
 
-        &::before{
-            content: "";
-            background: $color-primary-text-light;
-            display: block;
-            width: 14.5rem;
-            height: 0.5rem;
-            position: absolute;
-            left: 50%;
-            top: 0;
-            transform: translateX(-50%);
-        }
-
         &--active {
-            h1,
+            h1 {
+                color: $color-secondary;
+
+                &::before {
+                    background: $color-secondary;
+                }
+            }
+
             p {
                 color: $color-secondary;
             }
