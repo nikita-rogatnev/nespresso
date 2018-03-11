@@ -12,36 +12,44 @@
     &__content {
         display: flex;
         flex-direction: row;
+
         flex-wrap: wrap;
     }
 
     &__heading {
         width: 100%;
-        font-weight: $extra-bold-font-weight;
-        color: $color-secondary;
-        font-size: 2.6rem;
-        line-height: 1;
         margin-bottom: 3rem;
+
+        color: $color-secondary;
+
+        font-size: 2.6rem;
+        font-weight: $extra-bold-font-weight;
+        line-height: 1;
     }
 
     &__list {
         width: auto;
+
         flex-grow: 1;
     }
 
     &__item {
-        margin-bottom: 3.5rem;
-        padding-left: 5.5rem;
         position: relative;
 
+        margin-bottom: 3.5rem;
+        padding-left: 5.5rem;
+
         &::before {
-            content: "";
             position: absolute;
-            left: 0;
             top: -50%;
+            left: 0;
+
             display: block;
+
             width: 3.5rem;
             height: 3.5rem;
+
+            content: "";
         }
 
         &:nth-child(1) {
@@ -65,10 +73,11 @@
         }
 
         a {
-            font-weight: $regular-font-weight;
-            font-size: $font-size-00;
-            line-height: 1;
             color: $color-primary-text-dark;
+
+            font-size: $font-size-00;
+            font-weight: $regular-font-weight;
+            line-height: 1;
 
             &:visited {
                 color: $color-primary-text-dark;
@@ -82,37 +91,45 @@
     }
 
     &__promocode {
-        text-align: center;
         width: 100%;
         margin-top: 4rem;
         padding: 3rem 0;
-        border-top: 0.1rem solid $color-primary-dark;
-        border-bottom: 0.1rem solid $color-primary-dark;
-        font-weight: $extra-bold-font-weight;
-        font-size: $font-size-00;
-        line-height: 2rem;
+
+        text-align: center;
         white-space: nowrap;
 
+        border-top: 0.1rem solid $color-primary-dark;
+        border-bottom: 0.1rem solid $color-primary-dark;
+
+        font-size: $font-size-00;
+        font-weight: $extra-bold-font-weight;
+        line-height: 2rem;
+
         span {
-            color: $color-secondary;
-            font-weight: $extra-bold-font-weight;
-            font-size: 2.6rem;
-            line-height: 1;
-            text-transform: uppercase;
             display: block;
+
             padding-top: 2rem;
+
+            text-transform: uppercase;
+
+            color: $color-secondary;
+
+            font-size: 2.6rem;
+            font-weight: $extra-bold-font-weight;
+            line-height: 1;
         }
     }
 
     @media (min-width: $large-up) {
         &__content {
             padding: 8rem 13rem;
+
             border: 0.1rem solid $color-primary-dark;
         }
 
         &__promocode {
-            margin: 0;
             width: 25rem;
+            margin: 0;
         }
     }
 }

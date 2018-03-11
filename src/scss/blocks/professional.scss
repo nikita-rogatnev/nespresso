@@ -6,12 +6,16 @@
     @include heading;
 
     &__wrapper {
-        background: url("../img/professional.png") no-repeat center center / cover;
-        text-align: center;
-        min-height: 62rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+
+        min-height: 62rem;
         padding-bottom: 2rem;
+
+        text-align: center;
+
+        background: url("../img/professional.png") no-repeat center center / cover;
+
+        justify-content: space-between;
     }
 }

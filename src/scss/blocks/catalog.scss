@@ -6,15 +6,18 @@
     @include heading;
 
     &__wrapper {
-        text-align: center;
         padding-bottom: 6.5rem;
+
+        text-align: center;
     }
 
     &__slider {
-        margin: 0 -2.5rem;
         position: relative;
-        line-height: 0;
+
+        margin: 0 -2.5rem;
+
         font-size: 0;
+        line-height: 0;
     }
 
     &__slide {
@@ -24,6 +27,7 @@
             position: absolute;
             top: 47.5%;
             left: 50%;
+
             transform: translate(-50%, -50%);
         }
 
@@ -36,51 +40,66 @@
         position: absolute;
         top: 2rem;
         right: 2rem;
+
         width: 4rem;
         height: 4rem;
     }
 
     &__items {
-        display: flex;
-        flex-direction: column;
         position: relative;
         z-index: 1;
+
+        display: flex;
+        flex-direction: column;
+
         padding-bottom: 3.5rem;
     }
 
     &__item {
-        width: 100%;
-        font-size: 0;
-        line-height: 0;
         position: relative;
+
+        width: 100%;
         padding: 5rem 0;
 
+        font-size: 0;
+        line-height: 0;
+
         h1 {
-            font-size: $font-size-00;
-            line-height: 2rem;
-            text-transform: uppercase;
-            font-weight: $regular-font-weight;
-            color: $color-primary-text-dark;
             position: relative;
+
             padding: 1rem 0 1.4rem;
+
+            text-transform: uppercase;
+
+            color: $color-primary-text-dark;
+
+            font-size: $font-size-00;
+            font-weight: $regular-font-weight;
+            line-height: 2rem;
         }
 
         p {
             margin: 0;
-            font-size: 2.4rem;
-            line-height: 2.6rem;
-            font-weight: $bold-font-weight;
+
             color: $color-primary-text-dark;
+
+            font-size: 2.4rem;
+            font-weight: $bold-font-weight;
+            line-height: 2.6rem;
         }
 
         &::before {
-            content: "";
-            display: block;
             position: absolute;
             top: 1rem;
             left: 1rem;
+
+            display: block;
+
             width: 6rem;
             height: 6rem;
+
+            content: "";
+
             background: url("../img/present.png") no-repeat center center / contain;
         }
 
@@ -93,14 +112,18 @@
                 color: $color-secondary;
 
                 &::before {
-                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+
                     display: block;
+
                     width: 14.5rem;
                     height: 0.5rem;
-                    position: absolute;
-                    left: 50%;
-                    top: 0;
+
+                    content: "";
                     transform: translateX(-50%);
+
                     background: $color-secondary;
                 }
             }
@@ -119,21 +142,27 @@
     @media (min-width: $large-up) {
         &__slider {
             &::after {
-                content: "";
+                position: absolute;
+                z-index: 1;
+                bottom: -8rem;
+
                 display: block;
+
                 width: 100%;
                 height: 8rem;
+
+                content: "";
+
                 background: url("../img/shadow.png") no-repeat center / cover;
-                position: absolute;
-                bottom: -8rem;
-                z-index: 1;
             }
         }
-        
+
         &__items {
             flex-direction: row;
-            flex-wrap: nowrap;
+
             margin-top: -4rem;
+
+            flex-wrap: nowrap;
         }
 
         &__item {
@@ -153,6 +182,7 @@
             &::before {
                 top: -1rem;
                 left: -1rem;
+
                 width: 8rem;
                 height: 8rem;
             }
@@ -161,6 +191,7 @@
         &__plus {
             top: 4rem;
             right: 4rem;
+
             width: 6rem;
             height: 6rem;
         }

@@ -11,32 +11,36 @@ $extra-bold-font-weight: 900;
 // FONTS
 @font-face {
     font-family: 'NespressoLucas';
-    font-style: normal;
     font-weight: $extra-bold-font-weight;
+    font-style: normal;
+
     src: url('../fonts/NespressoLucas-XtraBd.woff2') format('woff2'),
     url('../fonts/NespressoLucas-XtraBd.woff') format('woff');
 }
 
 @font-face {
     font-family: 'NespressoLucas';
-    font-style: normal;
     font-weight: $bold-font-weight;
+    font-style: normal;
+
     src: url('../fonts/NespressoLucas-Bold.woff2') format('woff2'),
     url('../fonts/NespressoLucas-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'NespressoLucas';
-    font-style: normal;
     font-weight: $regular-font-weight;
+    font-style: normal;
+
     src: url('../fonts/NespressoLucas-Regular.woff2') format('woff2'),
     url('../fonts/NespressoLucas-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'NespressoLucas';
-    font-style: normal;
     font-weight: $light-font-weight;
+    font-style: normal;
+
     src: url('../fonts/NespressoLucas-Light.woff2') format('woff2'),
     url('../fonts/NespressoLucas-Light.woff') format('woff');
 }
@@ -58,7 +62,6 @@ $font-size-05: 5.5rem; // 55px
 $font-size-06: 6.5rem; // 65px
 
 $base-font-size: $font-size--1;
-
 $base-font-family: 'NespressoLucas', Arial, sans-serif;
 $secondary-font-family: $base-font-family;
 
@@ -66,15 +69,12 @@ $secondary-font-family: $base-font-family;
 $color-accent: rgba(2, 189, 236, 1);
 $color-accent-dark: $color-accent;
 $color-accent-light: $color-accent;
-
 $color-primary: rgba(0, 0, 0, 1);
 $color-primary-dark: rgba(59, 59, 59, 1);
 $color-primary-light: $color-primary;
-
 $color-secondary: rgba(221, 157, 74, 1);
 $color-secondary-dark: $color-secondary;
 $color-secondary-light: $color-secondary;
-
 $color-primary-text-dark: rgba(0, 0, 0, 1);
 $color-primary-text-light: rgba(255, 255, 255, 1);
 

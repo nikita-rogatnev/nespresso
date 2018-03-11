@@ -5,54 +5,71 @@
     @include wrapper;
 
     &__wrapper {
-        background: url("../img/intro.jpg") no-repeat center center / cover;
-        text-align: center;
         display: flex;
-        justify-content: flex-end;
+
         padding: 9rem 0;
+
+        text-align: center;
+
+        background: url("../img/intro.jpg") no-repeat center center / cover;
+
+        justify-content: flex-end;
     }
 
     &__heading {
-        color: $color-primary-text-light;
-        font-size: 3rem;
-        line-height: 1.2;
-        text-transform: uppercase;
-        margin-bottom: 3rem;
-        padding-bottom: 3rem;
         position: relative;
 
+        margin-bottom: 3rem;
+        padding-bottom: 3rem;
+
+        text-transform: uppercase;
+
+        color: $color-primary-text-light;
+
+        font-size: 3rem;
+        line-height: 1.2;
+
         &::after {
-            content: "";
-            background: $color-primary-text-light;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+
             display: block;
+
             width: 14.5rem;
             height: 0.1rem;
-            position: absolute;
-            left: 50%;
-            bottom: 0;
+
+            content: "";
             transform: translateX(-50%);
+
+            background: $color-primary-text-light;
         }
     }
 
     &__subheading {
+        margin-bottom: 5rem;
+
+        text-transform: uppercase;
+
         color: $color-primary-text-light;
+
         font-size: 2rem;
         line-height: 1.2;
-        text-transform: uppercase;
-        margin-bottom: 5rem;
     }
 
     &__dates {
         color: $color-primary-text-light;
+
         font-size: $font-size-00;
         font-weight: $extra-bold-font-weight;
     }
 
     @media (min-width: $large-up) {
         &__heading {
+            padding-top: 2.5rem;
+
             font-size: 4.5rem;
             line-height: 1.15;
-            padding-top: 2.5rem;
         }
 
         &__subheading {

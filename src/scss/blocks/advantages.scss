@@ -13,20 +13,24 @@
     &__items {
         display: flex;
         flex-direction: column;
+
         text-align: center;
     }
 
     &__item {
-        padding: 2rem;
-        border: 0.1rem solid $color-primary-dark;
         display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
+
         width: 21.7rem;
         height: 21.7rem;
         margin: 0 auto;
+        padding: 2rem;
+
+        border: 0.1rem solid $color-primary-dark;
+
+        align-content: center;
+        align-items: center;
+        justify-content: center;
 
         &:nth-child(1) {
             img {
@@ -57,10 +61,11 @@
         }
 
         span {
-            height: 5.5rem;
             width: 100%;
-            font-weight: $regular-font-weight;
+            height: 5.5rem;
+
             font-size: $font-size-00;
+            font-weight: $regular-font-weight;
             line-height: 2rem;
         }
     }
@@ -68,17 +73,21 @@
     &__image {
         display: flex;
         flex-direction: column;
+
+        width: 100%;
+
         justify-content: center;
         align-items: center;
-        width: 100%;
         flex-grow: 1;
     }
 
     @media (min-width: $large-up) {
         &__items {
             flex-direction: row;
-            flex-wrap: nowrap;
+
             margin-top: 2.5rem;
+
+            flex-wrap: nowrap;
         }
     }
 }
