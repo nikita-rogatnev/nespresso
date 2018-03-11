@@ -24,12 +24,26 @@
 
 @mixin heading {
     &__heading {
-        font-size: $font-size-02;
-        line-height: 3.5rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
         text-align: center;
         color: $color-primary-text-dark;
         padding: 4rem 0;
         text-transform: uppercase;
         width: 100%;
+
+        &--small {
+            font-size: $font-size-01;
+        }
+
+        @media (min-width: $large-up) {
+            font-size: 3rem;
+            line-height: 3.5rem;
+
+            &--small {
+                font-size: $font-size-02;
+                line-height: 3.5rem;
+            }
+        }
     }
 }

@@ -51,6 +51,7 @@
         font-size: 0;
         line-height: 0;
         position: relative;
+        padding: 5rem 0;
 
         h1 {
             font-size: $font-size-00;
@@ -74,17 +75,15 @@
             content: "";
             display: block;
             position: absolute;
-            top: -2rem;
-            left: -1rem;
-            width: 9rem;
-            height: 9rem;
+            top: 1rem;
+            left: 1rem;
+            width: 6rem;
+            height: 6rem;
             background: url("../img/present.png") no-repeat center center / contain;
         }
 
-        &:first-child {
-            &::before {
-                left: 3rem;
-            }
+        &:last-child {
+            padding-bottom: 0;
         }
 
         &--active {
@@ -120,14 +119,27 @@
             flex-direction: row;
             flex-wrap: nowrap;
             margin-top: -5rem;
-
         }
 
         &__item {
             width: calc(100% / 3);
+            padding: 0;
 
             p {
                 padding: 0 3rem;
+            }
+
+            &:first-child {
+                &::before {
+                    left: 3rem;
+                }
+            }
+
+            &::before {
+                top: -2rem;
+                left: -1rem;
+                width: 9rem;
+                height: 9rem;
             }
         }
 

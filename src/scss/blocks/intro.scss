@@ -14,7 +14,7 @@
 
     &__heading {
         color: $color-primary-text-light;
-        font-size: 4.5rem;
+        font-size: 3rem;
         line-height: 1.2;
         text-transform: uppercase;
         margin-bottom: 3rem;
@@ -36,7 +36,7 @@
 
     &__subheading {
         color: $color-primary-text-light;
-        font-size: 3rem;
+        font-size: 2rem;
         line-height: 1.2;
         text-transform: uppercase;
         margin-bottom: 6rem;
@@ -49,6 +49,16 @@
     }
 
     @media (min-width: $large-up) {
+        &__heading {
+            font-size: 4.5rem;
+            line-height: 1.2;
+        }
+
+        &__subheading {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+
         &__content {
             width: 50%;
         }

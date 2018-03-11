@@ -109,19 +109,21 @@ a {
   text-transform: uppercase;
   color: white;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 1.6rem;
   line-height: 1;
   margin: 0 auto;
-  padding: 1.5rem 5rem;
+  padding: 1rem 2rem;
   display: inline-block;
   vertical-align: middle;
-  border: 0.5rem solid black; }
+  border: 0.3rem solid black;
+  width: 100%; }
   .btn--light {
     background: transparent;
     border-color: white;
     color: white;
     text-transform: none;
-    font-size: 2.6rem; }
+    width: auto;
+    font-size: 1.6rem; }
 
 /* ------------------------------------------ */
 /* INTRO BLOCK
@@ -161,7 +163,7 @@ a {
     padding: 9rem 0; }
   .intro__heading {
     color: white;
-    font-size: 4.5rem;
+    font-size: 3rem;
     line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 3rem;
@@ -180,7 +182,7 @@ a {
               transform: translateX(-50%); }
   .intro__subheading {
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 6rem; }
@@ -216,13 +218,15 @@ a {
     background: white;
     position: relative; }
   .catalog__heading {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     text-align: center;
     color: black;
     padding: 4rem 0;
     text-transform: uppercase;
     width: 100%; }
+    .catalog__heading--small {
+      font-size: 2rem; }
   .catalog__wrapper {
     text-align: center;
     padding-bottom: 6.5rem; }
@@ -260,7 +264,8 @@ a {
     width: 100%;
     font-size: 0;
     line-height: 0;
-    position: relative; }
+    position: relative;
+    padding: 5rem 0; }
     .catalog__item h1 {
       font-size: 1.8rem;
       line-height: 2rem;
@@ -279,13 +284,13 @@ a {
       content: "";
       display: block;
       position: absolute;
-      top: -2rem;
-      left: -1rem;
-      width: 9rem;
-      height: 9rem;
+      top: 1rem;
+      left: 1rem;
+      width: 6rem;
+      height: 6rem;
       background: url("../img/present.png") no-repeat center center/contain; }
-    .catalog__item:first-child::before {
-      left: 3rem; }
+    .catalog__item:last-child {
+      padding-bottom: 0; }
     .catalog__item--active h1 {
       color: #dd9d4a; }
       .catalog__item--active h1::before {
@@ -332,13 +337,15 @@ a {
     background: white;
     position: relative; }
   .special__heading {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     text-align: center;
     color: black;
     padding: 4rem 0;
     text-transform: uppercase;
     width: 100%; }
+    .special__heading--small {
+      font-size: 2rem; }
   .special__wrapper {
     background: #f4f4f4;
     display: -webkit-box;
@@ -408,13 +415,15 @@ a {
     background: white;
     position: relative; }
   .collection__heading {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     text-align: center;
     color: black;
     padding: 4rem 0;
     text-transform: uppercase;
     width: 100%; }
+    .collection__heading--small {
+      font-size: 2rem; }
   .collection__content {
     font-size: 0;
     line-height: 0; }
@@ -446,13 +455,15 @@ a {
     background: white;
     position: relative; }
   .professional__heading {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     text-align: center;
     color: black;
     padding: 4rem 0;
     text-transform: uppercase;
     width: 100%; }
+    .professional__heading--small {
+      font-size: 2rem; }
   .professional__wrapper {
     background: url("../img/professional.png") no-repeat center center/cover, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
     background: url("../img/professional.png") no-repeat center center/cover, linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
@@ -497,13 +508,15 @@ a {
     background: white;
     position: relative; }
   .advantages__heading {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     text-align: center;
     color: black;
     padding: 4rem 0;
     text-transform: uppercase;
     width: 100%; }
+    .advantages__heading--small {
+      font-size: 2rem; }
   .advantages__wrapper {
     padding-bottom: 3.5rem; }
   .advantages__items {
@@ -765,12 +778,32 @@ a {
     @media (min-width: 918px) {
       .header__wrapper {
         width: 918px; }
+    .btn {
+      font-size: 3rem;
+      padding: 1.5rem 5rem;
+      border: 0.5rem solid black;
+      width: auto; }
+      .btn--light {
+        font-size: 2.6rem;
+        border-color: white; }
       .intro__wrapper {
         width: 918px; }
+    .intro__heading {
+      font-size: 4.5rem;
+      line-height: 1.2; }
+    .intro__subheading {
+      font-size: 3rem;
+      line-height: 1.2; }
     .intro__content {
       width: 50%; }
       .catalog__wrapper {
         width: 918px; }
+      .catalog__heading {
+        font-size: 3rem;
+        line-height: 3.5rem; }
+        .catalog__heading--small {
+          font-size: 2.5rem;
+          line-height: 3.5rem; }
     .catalog__items {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -780,9 +813,17 @@ a {
           flex-wrap: nowrap;
       margin-top: -5rem; }
     .catalog__item {
-      width: calc(100% / 3); }
+      width: calc(100% / 3);
+      padding: 0; }
       .catalog__item p {
         padding: 0 3rem; }
+      .catalog__item:first-child::before {
+        left: 3rem; }
+      .catalog__item::before {
+        top: -2rem;
+        left: -1rem;
+        width: 9rem;
+        height: 9rem; }
     .catalog__plus {
       top: 4rem;
       right: 4rem;
@@ -790,6 +831,12 @@ a {
       height: 6rem; }
       .special__wrapper {
         width: 918px; }
+      .special__heading {
+        font-size: 3rem;
+        line-height: 3.5rem; }
+        .special__heading--small {
+          font-size: 2.5rem;
+          line-height: 3.5rem; }
     .special__wrapper {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -798,15 +845,34 @@ a {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
     .special__image {
-      width: 50%; }
+      width: 50%;
+      padding-right: 3rem; }
     .special__content {
       width: 50%; }
       .collection__wrapper {
         width: 918px; }
+      .collection__heading {
+        font-size: 3rem;
+        line-height: 3.5rem; }
+        .collection__heading--small {
+          font-size: 2.5rem;
+          line-height: 3.5rem; }
       .professional__wrapper {
         width: 918px; }
+      .professional__heading {
+        font-size: 3rem;
+        line-height: 3.5rem; }
+        .professional__heading--small {
+          font-size: 2.5rem;
+          line-height: 3.5rem; }
       .advantages__wrapper {
         width: 918px; }
+      .advantages__heading {
+        font-size: 3rem;
+        line-height: 3.5rem; }
+        .advantages__heading--small {
+          font-size: 2.5rem;
+          line-height: 3.5rem; }
     .advantages__items {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;

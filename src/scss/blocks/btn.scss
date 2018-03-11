@@ -6,19 +6,33 @@
     text-transform: uppercase;
     color: $color-primary-text-light;
     font-weight: $bold-font-weight;
-    font-size: 3rem;
+    font-size: $font-size--1;
     line-height: 1;
     margin: 0 auto;
-    padding: 1.5rem 5rem;
+    padding: 1rem 2rem;
     display: inline-block;
     vertical-align: middle;
-    border: 0.5rem solid $color-primary-text-dark;
+    border: 0.3rem solid $color-primary-text-dark;
+    width: 100%;
 
     &--light {
         background: transparent;
         border-color: $color-primary-text-light;
         color: $color-primary-text-light;
         text-transform: none;
-        font-size: 2.6rem;
+        width: auto;
+        font-size: $font-size--1;
+    }
+
+    @media (min-width: $large-up) {
+        font-size: 3rem;
+        padding: 1.5rem 5rem;
+        border: 0.5rem solid $color-primary-text-dark;
+        width: auto;
+
+        &--light {
+            font-size: 2.6rem;
+            border-color: $color-primary-text-light;
+        }
     }
 }
