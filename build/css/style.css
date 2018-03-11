@@ -221,7 +221,8 @@ a {
     text-align: center;
     color: black;
     padding: 4rem 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 100%; }
   .catalog__wrapper {
     text-align: center;
     padding-bottom: 6.5rem; }
@@ -336,9 +337,49 @@ a {
     text-align: center;
     color: black;
     padding: 4rem 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 100%; }
   .special__wrapper {
-    background: #f4f4f4; }
+    background: #f4f4f4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 7rem; }
+  .special__image {
+    width: 100%;
+    font-size: 0;
+    line-height: 0; }
+    .special__image img {
+      width: 100%;
+      height: auto; }
+  .special__content {
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .special__content h3 {
+      color: #dd9d4a;
+      font-size: 2.6rem;
+      margin-bottom: 3.5rem; }
+    .special__content p {
+      font-weight: 300;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      margin-bottom: 3.5rem; }
+    .special__content .btn {
+      margin-bottom: 3.5rem; }
+    .special__content small {
+      font-weight: 300;
+      font-size: 1.3rem; }
 
 /* ------------------------------------------ */
 /* COLLECTION BLOCK
@@ -372,7 +413,11 @@ a {
     text-align: center;
     color: black;
     padding: 4rem 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 100%; }
+  .collection__content {
+    font-size: 0;
+    line-height: 0; }
 
 /* ------------------------------------------ */
 /* PROFESSIONAL BLOCK
@@ -406,7 +451,24 @@ a {
     text-align: center;
     color: black;
     padding: 4rem 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 100%; }
+  .professional__wrapper {
+    background: url("../img/professional.png") no-repeat center center/cover, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+    background: url("../img/professional.png") no-repeat center center/cover, linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+    text-align: center;
+    min-height: 62rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 2rem; }
 
 /* ------------------------------------------ */
 /* ADVANTAGES BLOCK
@@ -440,7 +502,8 @@ a {
     text-align: center;
     color: black;
     padding: 4rem 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 100%; }
 
 /* ------------------------------------------ */
 /* CONTACTS BLOCK
@@ -523,6 +586,17 @@ a {
       height: 6rem; }
       .special__wrapper {
         width: 918px; }
+    .special__wrapper {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .special__image {
+      width: 50%; }
+    .special__content {
+      width: 50%; }
       .collection__wrapper {
         width: 918px; }
       .professional__wrapper {
