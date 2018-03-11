@@ -306,6 +306,8 @@ a {
       background: url("../img/present.png") no-repeat center center/contain; }
     .catalog__item:last-child {
       padding-bottom: 0; }
+    .catalog__item:hover {
+      cursor: pointer; }
     .catalog__item--active h1 {
       color: #dd9d4a; }
       .catalog__item--active h1::before {

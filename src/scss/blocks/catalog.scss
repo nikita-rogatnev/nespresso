@@ -107,6 +107,10 @@
             padding-bottom: 0;
         }
 
+        &:hover {
+            cursor: pointer;
+        }
+
         &--active {
             h1 {
                 color: $color-secondary;
