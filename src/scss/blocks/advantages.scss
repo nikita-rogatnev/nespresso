@@ -4,4 +4,79 @@
 .advantages {
     @include wrapper;
     @include heading;
+
+    &__wrapper {
+        padding-bottom: 3.5rem;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__item {
+        padding: 2rem;
+        border: 0.1rem solid #3b3b3b;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 21.7rem;
+        height: 21.7rem;
+        margin: 0 auto;
+
+        &:nth-child(1) {
+            img {
+                width: 10.1rem;
+                height: 6.9rem;
+            }
+        }
+
+        &:nth-child(2) {
+            img {
+                width: 13.9rem;
+                height: 6.2rem;
+            }
+        }
+
+        &:nth-child(3) {
+            img {
+                width: 8.3rem;
+                height: 9rem;
+            }
+        }
+
+        &:nth-child(4) {
+            img {
+                width: 6.7rem;
+                height: 8.1rem;
+            }
+        }
+
+        span {
+            height: 5.5rem;
+            width: 100%;
+            font-weight: $regular-font-weight;
+            font-size: $font-size-00;
+            line-height: 2rem;
+        }
+    }
+
+    &__image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    @media (min-width: $large-up) {
+        &__items {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
 }
