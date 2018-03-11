@@ -5,8 +5,27 @@
     @include wrapper;
     @include heading;
 
+    &__wrapper {
+        background: #f4f4f4;
+        text-align: center;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 55%;
+            background: url("../img/shadow.png") no-repeat center / cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+
     &__content {
         font-size: 0;
         line-height: 0;
+        z-index: 2;
+        position: relative;
     }
 }
