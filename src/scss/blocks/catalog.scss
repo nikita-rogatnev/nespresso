@@ -88,6 +88,16 @@
             line-height: 2.6rem;
         }
 
+        span {
+            display: block;
+
+            margin-top: 1.5rem;
+
+            color: $color-primary-text-dark;
+            font-size: 1.2rem;
+            font-weight: $bold-font-weight;
+        }
+
         &::before {
             position: absolute;
             top: 1rem;
@@ -133,6 +143,10 @@
             }
 
             p {
+                color: $color-secondary;
+            }
+
+            span {
                 color: $color-secondary;
             }
         }

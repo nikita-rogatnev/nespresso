@@ -11,9 +11,9 @@
 
         text-align: center;
 
-        background: url("../img/intro.jpg") no-repeat center center / cover;
+        background: url("../img/intro.png") no-repeat center center / cover;
 
-        justify-content: flex-end;
+        justify-content: center;
 
         &::after {
             position: absolute;
@@ -44,7 +44,7 @@
 
         text-transform: uppercase;
 
-        color: $color-primary-text-light;
+        color: $color-primary-text-dark;
 
         font-size: 3rem;
         line-height: 1.2;
@@ -71,14 +71,14 @@
 
         text-transform: uppercase;
 
-        color: $color-primary-text-light;
+        color: $color-primary-text-dark;
 
         font-size: 2rem;
         line-height: 1.2;
     }
 
     &__dates {
-        color: $color-primary-text-light;
+        color: $color-primary-text-dark;
 
         font-size: $font-size-00;
         font-weight: $extra-bold-font-weight;
@@ -86,6 +86,8 @@
 
     @media (min-width: $large-up) {
         &__wrapper {
+            justify-content: flex-end;
+
             &::after {
                 display: none;
             }

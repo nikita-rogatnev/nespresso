@@ -131,6 +131,16 @@
         }
     }
 
+    &__info {
+        padding-top: 0.5rem;
+        
+        span {
+            color: $color-primary-dark;
+
+            font-size: $font-size--3;
+        }
+    }
+
     @media (min-width: $large-up) {
         &__top {
             .footer__column {

@@ -1,0 +1,96 @@
+/* ------------------------------------------ */
+/* BARISTA BLOCK
+/* ------------------------------------------ */
+.barista {
+    @include wrapper;
+    @include heading;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        background: url("../img/barista.png") no-repeat center center / cover;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        text-align: center;
+
+        h3 {
+            margin-bottom: 3.5rem;
+
+            color: $color-secondary;
+
+            font-size: 2.6rem;
+        }
+
+        .btn {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        margin-bottom: 3.5rem;
+
+        ul {
+            width: 50%;
+
+            text-align: left;
+
+            font-size: $font-size-00;
+            font-weight: $light-font-weight;
+            line-height: 2rem;
+        }
+
+        li {
+            display: inline-block;
+
+            width: 100%;
+
+            vertical-align: middle;
+
+            &:before {
+                display: inline-block;
+
+                width: 0.7rem;
+                height: 0.7rem;
+                margin-right: 0.7rem;
+
+                content: "";
+                vertical-align: middle;
+
+                border-radius: 50%;
+                background: #5dbcd2;
+            }
+        }
+    }
+
+    @media (min-width: $large-up) {
+        &__wrapper {
+            padding-bottom: 7rem;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &__content {
+            width: 50%;
+
+            align-self: flex-end;
+        }
+
+        &__list {
+            max-width: 80%;
+
+            align-self: center;
+        }
+    }
+}
